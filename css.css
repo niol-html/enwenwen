@@ -1,380 +1,256 @@
 /* Checked CSS code on css-validator, website breaks with given code */
-
 body {
-    background-color: black;
-    color: white;
-    font-family: sans-serif;
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-}
-
-main {
-  display: flex;
-  align-items: center;
-  min-height: 100vh;
   background-color: black;
-  padding-bottom: -50px;
+  color: white;
+  font-family: sans-serif;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
 }
-
+main {
+display: flex;
+align-items: center;
+min-height: 100vh;
+background-color: black;
+padding-bottom: -50px;
+}
 /*Chess pieces*/
-
 .content {
-  position: absolute;
-  z-index: 1;
-  top: 10%;
-  left: 50%;
-  margin-top: 135px;
-  margin-left: -145px;
-  width: 300px;
-  height: 350px;
-  text-align: center;
-  transition: all 1s;
+position: absolute;
+z-index: 1;
+top: 10%;
+left: 50%;
+margin-top: 135px;
+margin-left: -145px;
+width: 300px;
+height: 350px;
+text-align: center;
+transition: all 1s;
 }
-
-
 /*For players.html css*/
-
 .grid {
-  display: flex;
-  flex-wrap: flex;
-  max-width: 1600px;
-  margin: 1 auto;
-
-  @media screen and (min-width: 768px) {
-    max-width: 1200px;
-  }
+display: flex;
+flex-wrap: flex;
+max-width: 1600px;
+margin: 1 auto;
+@media screen and (min-width: 768px) {
+  max-width: 1200px;
 }
-
+}
 .card {
-  position: relative;
-  flex: 1 1 100%;
-  margin: 31px 0;
-  padding: 20px;
-  background: lighten(#f8f8f8,3%);
-  display: flex;
-  flex-direction: column;
-
-  @media screen and (min-width: 768px) {
-    flex-basis: calc(33.3% - (#{31px * 2} + #{20px * 2}));
-    margin: 0 31px;
-  }
+position: relative;
+flex: 1 1 100%;
+margin: 31px 0;
+padding: 20px;
+background: lighten(#f8f8f8,3%);
+display: flex;
+flex-direction: column;
+@media screen and (min-width: 768px) {
+  flex-basis: calc(33.3% - (#{31px * 2} + #{20px * 2}));
+  margin: 0 31px;
 }
-
+}
 .card__thumb {
-  overflow: hidden;
+overflow: hidden;
 }
-
 .card__img {
-  float: center;
-  width: 60%;
-  padding: 3px;
-  margin: auto;
+float: center;
+width: 60%;
+padding: 3px;
+margin: auto;
 }
-
 .card__img::after {
-  content: "";
-  clear: both;
-  display: table;
+content: "";
+clear: both;
+display: table;
 }
-
 .card__desc {
-  margin-top: 20px;
-  text-align: center;
-  padding: 10px;
+margin-top: 20px;
+text-align: center;
+padding: 10px;
 }
-
 .card__one {
-  transition: transform 0.5s;
+transition: transform 0.5s;
 }
-
 .card__one::before, .card__one::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transition: opacity 0.38s ease-in-out, transform 0.35s ease-in-out;
-  content: "";
-  opacity: 0;
-  pointer-events: none;
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+transition: opacity 0.38s ease-in-out, transform 0.35s ease-in-out;
+content: "";
+opacity: 0;
+pointer-events: none;
 }
 .card__one::before {
-  transform: scale3d(0, 1, 1);
-  transform-origin: left top;
-  border-top: 3px solid white;
-  border-bottom: 3px solid white;
+transform: scale3d(0, 1, 1);
+transform-origin: left top;
+border-top: 3px solid white;
+border-bottom: 3px solid white;
 }
 .card__one::after {
-  transform: scale3d(1, 0, 1);
-  transform-origin: right top;
-  border-right: 3px solid white;
-  border-left: 3px solid white;
+transform: scale3d(1, 0, 1);
+transform-origin: right top;
+border-right: 3px solid white;
+border-left: 3px solid white;
 }
 .card__one:hover::before, .card__one:hover::after, .card__one:focus::before, .card__one:focus::after {
-  transform: scale3d(1, 1, 1);
-  opacity: 1;
+transform: scale3d(1, 1, 1);
+opacity: 1;
 }
-
 .card__two {
-  transition: transform 0.5s;
+transition: transform 0.5s;
 }
-
 .card__two::before, .card__two::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transition: opacity 0.38s ease-in-out, transform 0.35s ease-in-out;
-  content: "";
-  opacity: 0;
-  pointer-events: none;
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+transition: opacity 0.38s ease-in-out, transform 0.35s ease-in-out;
+content: "";
+opacity: 0;
+pointer-events: none;
 }
 .card__two::before {
-  transform: scale3d(0, 1, 1);
-  transform-origin: left top;
-  border-top: 3px solid white;
-  border-bottom: 3px solid white;
+transform: scale3d(0, 1, 1);
+transform-origin: left top;
+border-top: 3px solid white;
+border-bottom: 3px solid white;
 }
 .card__two::after {
-  transform: scale3d(1, 0, 1);
-  transform-origin: right top;
-  border-right: 3px solid white;
-  border-left: 3px solid white;
+transform: scale3d(1, 0, 1);
+transform-origin: right top;
+border-right: 3px solid white;
+border-left: 3px solid white;
 }
 .card__two:hover::before, .card__two:hover::after, .card__two:focus::before, .card__two:focus::after {
-  transform: scale3d(1, 1, 1);
-  opacity: 1;
+transform: scale3d(1, 1, 1);
+opacity: 1;
 }
-
 .card__three {
-  transition: transform 0.5s;
+transition: transform 0.5s;
 }
-
 .card__three::before, .card__three::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transition: opacity 0.38s ease-in-out, transform 0.35s ease-in-out;
-  content: "";
-  opacity: 0;
-  pointer-events: none;
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+transition: opacity 0.38s ease-in-out, transform 0.35s ease-in-out;
+content: "";
+opacity: 0;
+pointer-events: none;
 }
 .card__three::before {
-  transform: scale3d(0, 1, 1);
-  transform-origin: left top;
-  border-top: 3px solid white;
-  border-bottom: 3px solid white;
+transform: scale3d(0, 1, 1);
+transform-origin: left top;
+border-top: 3px solid white;
+border-bottom: 3px solid white;
 }
 .card__three::after {
-  transform: scale3d(1, 0, 1);
-  transform-origin: right top;
-  border-right: 3px solid white;
-  border-left: 3px solid white;
+transform: scale3d(1, 0, 1);
+transform-origin: right top;
+border-right: 3px solid white;
+border-left: 3px solid white;
 }
 .card__three:hover::before, .card__three:hover::after, .card__three:focus::before, .card__three:focus::after {
-  transform: scale3d(1, 1, 1);
-  opacity: 1;
+transform: scale3d(1, 1, 1);
+opacity: 1;
 }
-
 /*Background*/
-
 #landingpage {
-    background: linear-gradient(to bottom, rgba(0,0,0,0.66) 100%, transparent), url('images/chess.jpeg');
-    background-size: cover;
-    background-position: center;
-    height: 91.6vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#wrapper {
-  margin-left: auto;
-  margin-right: auto;
-  width: 95%;
-}
-
-h1 {
-    font-size: 2rem;
-    display: inline-block;
-    padding: 1rem;
-    font-weight: 400;
-    position: absolute;
-    opacity: 1;
-    transform: scale(1);
-    transition: transform 0.5s ease, opacity 1s ease;
-    z-index: 2;
-}
-
-.is-loading h1 {
-    transform: scale(0.9);
-    opacity: 0;
-}
-
-nav {
-  background: #000000;
-  height: 60px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.66) 100%, transparent), url('images/chess.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 91.6vh;
+  width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
 }
-
-
-ul {
-  margin: 0px auto;
-  padding: 0;
-  list-style: none;
-  display: table;
-  width: 600px;
-  text-align: center;
+#wrapper {
+margin-left: auto;
+margin-right: auto;
+width: 95%;
 }
-
-li {
-  display: table-cell;
-  position: relative;
-  padding: 15px 0;
-}
-
-a {
-  color: #fff;body { 
-font-family: Tahoma, Verdana, Arial, sans-serif; 
-margin: 0; 
-padding: 0;
-}
-.hero { 
-background-image: url(https://images-forclass-0e740e.netlify.app/beached.jpg); 
-min-height: 100vh;  
-background-attachment: fixed; 
-background-position: center; 
-background-repeat: no-repeat; 
-background-size: cover; 
-padding: 0;
-}
-.tourshero { 
-background-image: url(https://images-forclass-0e740e.netlify.app/kayaks.jpg); 
-min-height: 100vh;
-background-attachment: fixed; 
-background-position: center; 
-background-repeat: no-repeat; 
-background-size: cover; 
-}
-.rentalshero { 
-background-image: url(https://images-forclass-0e740e.netlify.app/rentals.jpg); 
-min-height: 100vh; 
-background-attachment: fixed; 
-background-position: center; 
-background-repeat: no-repeat; 
-background-size: cover; 
-}
- .contacthero { 
-background-image: url(https://images-forclass-0e740e.netlify.app/lonekayak.jpg); 
-min-height: 100vh;  
-background-attachment: fixed; 
-background-position: center; 
-background-repeat: no-repeat; 
-background-size: cover; 
-}
- 
-nav { 
-
-
-
-
-padding: .5em;
-height: 40px;
-background:rgba(25,25, 25, 0.70);
-width: 100%;
-font-size: 120%;
-font-weight: bold;
-min-width: 900px;
-}
-nav ul { 
-list-style-type: none; 
-margin: 5px; }
-nav ul li { 
-display: inline; 
-padding-left: 2em; 
-padding-right: 2em; }
-nav a { text-decoration:none; }
-nav a:link { color: #EAEAEA; }
-nav a:visited { color: #FFF; }
-nav a:hover { color: #FDA27F; }
-h1 { 
-height: 100px; 
-padding-top: 2em; 
-text-align: center;
-background:rgba(255, 255, 255, 0.80);
-}
-.space {height: 20vh; }
-#tours, #rentals, #contact {  
-background-color: #FFF;
-width: 60%;
-padding-left: 6em;
-padding-top: 70px;
-padding-bottom: 2em; }
-footer {   
-background:rgba(25,25, 25, 0.90);
-width: 100%;
-font-size: 90%;
-text-align: center;	
-color: #EAEAEA; 
-
-
-}	
-footer a { 
-text-decoration: none;  
-color: #EAEAEA; }	
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 0.15em;
+h1 {
+  font-size: 2rem;
   display: inline-block;
-  padding: 15px 20px;
-  position: relative;
-}
-
-a:after {    
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
+  padding: 1rem;
+  font-weight: 400;
   position: absolute;
-  background: #fff;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 0.5s ease, opacity 1s ease;
+  z-index: 2;
+}
+.is-loading h1 {
+  transform: scale(0.9);
+  opacity: 0;
+}
+nav {
+background: #000000;
+height: 60px;
+display: flex;
+justify-content: flex-end;
+}
+ul {
+margin: 0px auto;
+padding: 0;
+list-style: none;
+display: table;
+width: 600px;
+text-align: center;
+}
+li {
+display: table-cell;
+position: relative;
+padding: 15px 0;
+}
+a {
+color: #fff;
+text-transform: uppercase;
+text-decoration: none;
+letter-spacing: 0.15em;
+display: inline-block;
+padding: 15px 20px;
+position: relative;
+}
+a:after {    
+background: none repeat scroll 0 0 transparent;
+bottom: 0;
+content: "";
+display: block;
+height: 2px;
+left: 50%;
+position: absolute;
+background: #fff;
+transition: width 0.3s ease 0s, left 0.3s ease 0s;
+width: 0;
 }
 a:hover:after { 
-  width: 100%; 
-  left: 0; 
+width: 100%; 
+left: 0; 
 }
-
 @media screen and (max-height: 300px) {
-	ul {
-		margin-top: 40px;
-	}
+ul {
+  margin-top: 40px;
 }
-
+}
 /*Footer css*/
-
 .footer {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  margin-top: 20px;
+background-color: #333;
+color: #fff;
+padding: 10px;
+text-align: center;
+position: absolute;
+bottom: 0;
+width: 100%;
+margin-top: 20px;
 }
-
 .footer__content {
-  margin-top: -20px;
+margin-top: -20px;
 }
-
-
