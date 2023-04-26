@@ -255,3 +255,14 @@ margin-top: 20px;
 .footer__content {
 margin-top: -20px;
 }
+
+.infocards {
+  max-width: 1024px;
+  width: 100%;
+  padding: 0 4%;
+  padding-top: 250px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
