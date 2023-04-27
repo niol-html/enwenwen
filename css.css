@@ -371,3 +371,6 @@ margin-top: -20px;
   opacity: 1;
   transition: all 0.3s ease;
 }
+h2 {
+text-align: center;
+}
