@@ -347,7 +347,7 @@ margin-top: -20px;
 
 .cards:hover {
 /*  height: 270px; */
-  border: 2px solid white;
+/*  border: 2px solid white; */
 }
 
 .cards:hover .info {
