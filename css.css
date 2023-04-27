@@ -15,6 +15,9 @@ min-height: 100vh;
 background-color: black;
 padding-bottom: -50px;
 }
+.underHeader {
+border: 2px solid white;  
+}
 /*Chess pieces*/
 .content {
 position: absolute;
