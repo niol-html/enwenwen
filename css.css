@@ -268,8 +268,7 @@ text-align: center;
 .contact-form {
   width: 50rem;
   flex-direction: column;
-  padding-bottom: 75px;
-  padding-top: 75px;
+  padding-bottom: 125px;
 }
 
 .contact-form input, .contact-form textarea {
